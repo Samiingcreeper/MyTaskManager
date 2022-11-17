@@ -21,7 +21,7 @@ public class Config {
 
     //<editor-fold desc="Font Related">
     public static final Color DEFAULT_TEXT_FILL = Color.rgb(66, 73, 73);
-    public static final String DEFAULT_FONT_NAME = "Helvetica";
+    public static final String DEFAULT_FONT_NAME = "Yu Gothic";
     public static final double DEFAULT_FONT_SIZE = 14;
     public static final double SMALL_FONT_SIZE = 12;
     public static final Font DEFAULT_FONT = Font.font(DEFAULT_FONT_NAME, DEFAULT_FONT_SIZE);

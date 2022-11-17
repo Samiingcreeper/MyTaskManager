@@ -53,7 +53,7 @@ public class ApplicationManager extends Application{
 
 //        primaryStage.setWidth(WINDOW_WIDTH);
         primaryStage.setHeight(WINDOW_HEIGHT);
-        primaryStage.setTitle("時間行程管理程式");
+        primaryStage.setTitle("Personal Task Todo List and Timetable");
         primaryStage.show();
     }
 
@@ -72,8 +72,8 @@ public class ApplicationManager extends Application{
         public MainPane(){
             setBackground(Config.WHITE_BACKGROUND);
 
-            VBox left = new VBox(Config.getStripe("\uD83D\uDCC5 日厝", Color.RED) ,new Calendar(),
-                    Config.getStripe("✒ 新建事項", Color.RED), new TaskCreatorPane());
+            VBox left = new VBox(Config.getStripe("\uD83D\uDCC5 Calendar", Color.RED) ,new Calendar(),
+                    Config.getStripe("✒ Create New Task", Color.RED), new TaskCreatorPane());
             TaskTablePane taskTable = taskTablePlane;
             TimeTablePane timeTable = timeTablePane;
 
@@ -83,8 +83,8 @@ public class ApplicationManager extends Application{
             left.setSpacing(10);
             left.setPadding(new Insets(10));
 
-            VBox center = new VBox(Config.getBigStripe("\uD83D\uDCDC 事項清單", Color.ORANGE), taskTable,
-                    Config.getBigStripe("\uD83D\uDCC8 時間表", Color.GREEN), timeTable);
+            VBox center = new VBox(Config.getBigStripe("\uD83D\uDCDC Task List", Color.ORANGE), taskTable,
+                    Config.getBigStripe("\uD83D\uDCC8 Timetable", Color.GREEN), timeTable);
 
             center.setSpacing(10);
             center.setPadding(new Insets(10));

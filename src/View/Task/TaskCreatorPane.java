@@ -107,11 +107,11 @@ public class TaskCreatorPane extends BorderPane {
     private GridPane createForm(){
         GridPane gridPane = createForm(new Node[][]{
 //                {lbHeader},
-                {getTextLabel("標題"), tfTitle},
-                {getTextLabel("描述"), tfDescription},
-                {getTextLabel("日期"), tfMonth, tfDayOfMonth},
-                {getTextLabel("開始時間"), tfStartHour, tfStartMinute},
-                {getTextLabel("結束時間"), tfEndHour, tfEndMinute},
+                {getTextLabel("Title"), tfTitle},
+                {getTextLabel("Description"), tfDescription},
+                {getTextLabel("Date"), tfMonth, tfDayOfMonth},
+                {getTextLabel("Starting Time"), tfStartHour, tfStartMinute},
+                {getTextLabel("Ending Time"), tfEndHour, tfEndMinute},
                 {btnSubmit}
         });
         GridPane.setHalignment(btnSubmit, HPos.RIGHT);
@@ -315,9 +315,9 @@ class Alert extends VBox{
 
 
     private void initializeAlertLabels(){
-        lbTitleAlert = getAlertLabel("標題不能為空");
-        lbDateAlert = getAlertLabel("日期輸入錯誤");
-        lbTimeAlert = getAlertLabel("開始/結束時間輸入錯誤");
+        lbTitleAlert = getAlertLabel("Title cannot be empty");
+        lbDateAlert = getAlertLabel("Faulty date entry");
+        lbTimeAlert = getAlertLabel("Fault starting/ending time entry");
         setAlert(false);
     }
 

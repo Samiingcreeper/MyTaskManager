@@ -69,9 +69,9 @@ public class TaskTablePane extends BorderPane {
     private void initializeTaskPaneRow(){
         taskPaneRow.setSpacing(Config.DEFAULT_SPACING);
 
-        todayStripe = Config.getStripe("\uD83D\uDCC3 當日事項", Color.ORANGE);
-        tomorrowStripe = Config.getStripe("\uD83D\uDCC3 當日後天事項", Color.ORANGE);
-        Config.Stripe allStripe = Config.getStripe("\uD83D\uDCC3 所有事項", Color.ORANGE);
+        todayStripe = Config.getStripe("\uD83D\uDCC3 Today's Tasks", Color.ORANGE);
+        tomorrowStripe = Config.getStripe("\uD83D\uDCC3 Tomorrow's Tasks", Color.ORANGE);
+        Config.Stripe allStripe = Config.getStripe("\uD83D\uDCC3 All Tasks", Color.ORANGE);
 
         VBox v1 = Config.alignedVBox(todayStripe, todayTaskPane);
         VBox v2 = Config.alignedVBox(tomorrowStripe, tomorrowTaskPane);
@@ -134,7 +134,7 @@ public class TaskTablePane extends BorderPane {
     }
 
     private Label getShowCompleteLabel(){
-        Label label = new Label(" 顯示已完成事項");
+        Label label = new Label(" Show all completed tasks");
         label.setFont(Font.font(Config.DEFAULT_FONT_NAME, 16));
 
         CheckBox cb = new CheckBox();
